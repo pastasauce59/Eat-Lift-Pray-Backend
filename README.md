@@ -1,33 +1,17 @@
-# Project Requirements
+# Eat, Lift, Pray 💪🏽
 
+Eat, Lift, Pray is a Clinet-Trainer application where you as a client can choose your celebrity trainer of choice and book a session with your workout preference (cardio, weight lifting, etc), session duration, specific date and time for appointment. A user books a session by either loging into their account or creating an account. Afterwards, users can make appointments for a session (POST), change your session (PATCH), or if you can no longer attend your session then you can cancel as well (DELETE). A user's booked sessions can be seen when they are logged in to their account.
 
-Write some stuff about your project here 🙂
+This is Eat Lift Pray's backend repository. Please go [here](https://github.com/pastasauce59/eat-lift-pray-frontend) for the frontend repository.
 
-    - What's your app?
-    - What routes can a client make a request to and what do they need to make that request? What should a client expect as a response from each route?
-    - Known bugs
-    - Contributors
-    - etc.
+## Technology used ⚙️: 
+- React frontend
+- Ruby Backend (2.6.1)
+- bootstrap and custom CSS for styling
+- Usestate hooks for React Datepicker component
 
-### Getting Started
-1. Clone down this repository.  
-2. A basic rack app is located in the backend folder. 
-3. First run _bundle_ in your backend folder to install your gems
-4. application.rb has an example GET route, replace this route with routes for your project! 
-
-**Start your server with:**
-` shotgun --port=9292 `
-
-> **Note:** This will run your server on port http://localhost:9292. 
-> [shotgun](https://github.com/rtomayko/shotgun) is a ruby gem that will automatically reload your rack server. You may still need to refresh your browser to see changes. 
-
-5. Your backend and your frontend should be in two different repositories. Create a new repository with a react app for your frontend. 
-
-**Fetch example**
->  Your react app should make fetch requests to your rack backend! 
-
-```js
-   fetch("http://localhost:9292/test")
-    .then(res => res.json())
-    .then(console.log)
-```
+## Installation 💻:
+- Fork and clone this repository as well as the [frontend repository](https://github.com/pastasauce59/eat-lift-pray-frontend) onto your local environment.
+- Open a terminal and cd into the backend folder. Run "shotgun --port 9292" to launch backend server.
+- Open another terminal and cd into the frontend folder.
+- Run "npm start" to start frontend.
