@@ -65,12 +65,5 @@ Session.create([
     {workout_description: "cardio", date: "05-30-2021", time: "8:00", price: 75, client_id: Client.find(18).id, trainer_id: Trainer.find(11).id},
 ])
 
-# shotgun --port=9292
-# just take out the equals
-# leave the space between
-#aka " shotgun --port 9292 "
-
-#example text here...
-
 puts "Created clients "
 puts "hello world"

@@ -30,17 +30,6 @@ class Application
     session_json = Session.all.to_json
 
    return [200, { 'Content-Type' => 'application/json' }, [session_json]]
-
-  # elsif req.path.match(/ClientLogin/) && req.get?
-  #   client_json = Client.find_by(:name)
-
-  #   (:include => { :sessions => {
-  #     :include => { :trainer => {
-  #                   :only => [:name, :image] } }
-  #   }
-  #  })
-
-  #  return [200, { 'Content-Type' => 'application/json' }, [client_json.to_json()]]
       
 
     elsif req.path.match(/clients/) && req.post?
@@ -90,15 +79,5 @@ class Application
       [404, {}, ["path not found!!!"]]
     end
   end
+  
 end
-
-#   private
-
-#   def send_hello
-#     return [200, { "Content-Type" => "application/json" }, [{ :message => "hello world!" }.to_json]]
-#   end
-
-#   def send_not_found
-#     return [404, {}, ["Path not found!!!"]]
-#   end
-# end
